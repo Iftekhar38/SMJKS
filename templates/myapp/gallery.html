@@ -1,0 +1,44 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="divider col-sm-12 col-xs-12 col-md-12">
+  <div class="header-text"> Our <span>Gallery</span></div>
+</div>
+
+<section id="clients">
+
+  <!-- Team Inner -->
+    <div class="inner team">
+
+      <!-- Members -->
+      <div class="team-members inner-details">
+
+        <!-- Member -->
+        {% for i in data %}
+        
+        
+        <div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+        
+          <div class="member-inner">
+            <!-- Team Member Image -->
+            <a class="team-image">
+              <!-- Img -->
+              <img src="{{i.pics.url}}" alt="" />
+            </a>
+
+          </div> <!-- End Member Inner -->
+        </div><!-- End Member -->
+
+        {% endfor %}
+        
+      </div><!-- End Members -->
+    </div><!-- End Team Inner -->
+  </section>
+
+
+
+{% endblock  %}
+
+

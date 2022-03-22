@@ -1,0 +1,81 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<div class="divider col-sm-12 col-xs-12 col-md-12">
+  <div class="header-text"><span>Contact</span> Us</div>
+</div>
+
+          <div class="col-md-6 col-md-offset-1 col-sm-7 col-xs-12">
+
+              <div class="widget">
+                  <h3 class="widget-title style5">Branch Office</h3>
+                  <p><b>Hatiya Gachhi, Hanuman Mandir ke pichhe, Kabristan road, ward no: 31, Saharsa - 852201 </p>
+                    <ul class="clearfix">
+                        <li>
+                            <p><span class="fa fa-envelope-o"></span>Email: <a href="mailto:smjks.ngo.bih@gmail.com">smjks.ngo.bih@gmail.com</a></p>
+                        </li>
+                        <li>
+                            <p><span class="fa fa-phone"></span>Phone: (+91) 9798629726, 9570493135</p>
+                        </li>
+                        
+                        <li>
+                            <p><span class="fa fa-map-marker"></span>Address: Hatiya Gachhi, Hanuman Mandir ke pichhe, Kabristan road, ward no: 31, Saharsa - 852201</p>
+                        </li>
+                    </ul>
+                    <h3 class="widget-title style5">Head Office</h3>
+                  <p><b>Sheikhpura, Khagaria, Bihar  
+                  
+              </div>
+              <!-- widget -->
+
+          </div>
+          <!-- col-md-7 -->
+          
+  <div class="contact-form-full col-md-4 col-sm-4 col-xs-11">
+
+    <div class="inner contact">
+      <!-- Form Area -->
+      <div class="contact-form">
+          <!-- Form -->
+          <form id="contact-us" method="POST">
+              {% csrf_token %}
+              <!-- Left Inputs -->
+              <div class="col-xs-12 wow animated slideInLeft" data-wow-delay=".5s">
+                  <!-- Name -->
+                  <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+                  <!-- Email -->
+                  <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+
+              </div><!-- End Left Inputs -->
+              <!-- Right Inputs -->
+              <div class="col-xs-12 wow animated slideInRight" data-wow-delay=".5s">
+                  <!-- Message -->
+                  <textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
+              </div><!-- End Right Inputs -->
+              <!-- Bottom Submit -->
+              <div class="relative fullwidth col-xs-12">
+                  <!-- Send Button -->
+                  <button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button>
+              </div><!-- End Bottom Submit -->
+              <!-- Clear -->
+              <div class="clear"></div>
+          </form>
+
+          <!-- Your Mail Message -->
+          
+
+      </div><!-- End Contact Form Area -->
+  </div><!-- End Inner -->
+</div>
+  <!-- wrapper -->
+</section>
+<section class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14359.520453701993!2d86.6119712!3d25.8734229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7abaa1e48e6d69e!2sSHIROMANEE%20MAHILA%20JAN%20KALYAN%20SANSTHAN!5e0!3m2!1sen!2sin!4v1647948913228!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+
+</iframe>
+</section>
+
+
+{% endblock  %}
+
+
